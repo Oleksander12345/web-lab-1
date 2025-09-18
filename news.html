@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MoonFacts — Новини</title>
+
+  <!-- Tailwind використовується ТІЛЬКИ у лівій навігації -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Твій файл стилів сітки/кольорів -->
+  <link rel="stylesheet" href="./styels.css">
+</head>
+<body>
+  <div class="layout">
+
+    <!-- 1: шапка -->
+    <header class="top">
+            <p>FICE ADVISOR</p>
+            <span><strong>MoonFacts</strong> — цікаві місії та відкриття</span>
+        </header>
+
+    <!-- 2: ліва навігація (Tailwind дозволено) -->
+    <aside class="left navigation">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a class="nav-link" href="index.html">Головна</a></li>
+                    <li><a class="nav-link" href="about.html">Про сайт</a></li>
+                    <li><a class="nav-link" href="gallery.html">Галерея</a></li>
+                    <li><a class="nav-link" href="news.html">Новини</a></li>
+                    <li><a class="nav-link" href="contacts.html">Контакти</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+    <!-- 3: центр — новини як <ol><li> -->
+    <main class="center news-main">
+      <h1>Оновлення місій та супутників Місяця</h1>
+      <p>Стислий дайджест цікавих новин про місячні орбітатори, ретранслятори та апарати.</p>
+
+      <ol style="margin: 12px 0 0 1.1rem;">
+        <li>
+          <h2 style="margin:0;">LRO продовжує картографування полярних тіней</h2>
+          <p style="margin:.25rem 0 .75rem 0; color:#374151;">
+            Дата: 2025-08-12 • Нові серії знімків регіонів із постійною тінню можуть допомогти уточнити розподіл криги.
+          </p>
+        </li>
+        <li>
+          <h2 style="margin:0;">Queqiao: стабільний зв’язок для досліджень зворотного боку</h2>
+          <p style="margin:.25rem 0 .75rem 0; color:#374151;">
+            Дата: 2025-07-30 • Ретранслятор біля точки L2 підтримує тривалі експерименти ровера та посадкової станції.
+          </p>
+        </li>
+        <li>
+          <h2 style="margin:0;">CAPSTONE підтверджує характеристики NRHO</h2>
+          <p style="margin:.25rem 0 .75rem 0; color:#374151;">
+            Дата: 2025-06-18 • Орбіта Near Rectilinear Halo Orbit виявляє очікувану стабільність для майбутньої Gateway.
+          </p>
+        </li>
+        <li>
+          <h2 style="margin:0;">Kaguya/SELENE: повторний аналіз даних мінералогії</h2>
+          <p style="margin:.25rem 0 .75rem 0; color:#374151;">
+            Дата: 2025-05-03 • Архів місії використано для побудови уточненої карти складу базальтів океанів.
+          </p>
+        </li>
+        <li>
+          <h2 style="margin:0;">SMART-1: уроки іонної тяги для майбутніх апаратів</h2>
+          <p style="margin:.25rem 0 .75rem 0; color:#374151;">
+            Дата: 2025-03-27 • Огляд результатів місії показує ефективність електрореактивної тяги на трасі до Місяця.
+          </p>
+          <ol style="margin:.25rem 0 0 1.1rem;">
+            <li>Економія пального порівняно з хімічною тягою.</li>
+            <li>Вища тривалість маневрів із низькою тягою.</li>
+            <li>Краще планування енергобалансу для довгих місій.</li>
+          </ol>
+        </li>
+      </ol>
+    </main>
+
+    <!-- 4: права колонка -->
+    <aside class="right">
+      <div>
+        <h3>План розділів</h3>
+        <ol>
+          <li>Перші орбітатори (історія)</li>
+          <li>Сучасні місії (LRO, Queqiao, CAPSTONE)</li>
+          <li>Наука: крига, рельєф, радіація</li>
+          <li>Майбутні програми (Gateway)</li>
+        </ol>
+
+        <hr>
+
+        <h3>Нагадування</h3>
+        <p>Зображення можна додавати до кожної новини у «Галереї» з посиланням з цього списку.</p>
+      </div>
+    </aside>
+
+    <!-- 5: нижній центральний блок -->
+    <section class="bar5">
+      <div>
+        <strong>Підписка на дайджест:</strong> нові факти про супутники Місяця раз на тиждень.
+      </div>
+    </section>
+
+    <!-- 6: футер -->
+    <footer class="bottom">
+            <p>Free S.. FIOT</p>
+            <span>© MoonFacts</span>
+        </footer>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Варіант 13 — Grid + Flex</title>
+  <link rel="stylesheet" href="./styels.css">
+</head>
+
+<body>
+  <div class="layout">
+
+     <header class="top">
+            <p>FICE ADVISOR</p>
+            <span><strong>MoonFacts</strong> — цікаві місії та відкриття</span>
+        </header>
+
+    <aside class="left navigation">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html">Головна</a></li>
+          <li><a class="nav-link" href="about.html">Про сайт</a></li>
+          <li><a class="nav-link" href="gallery.html">Галерея</a></li>
+          <li><a class="nav-link" href="news.html">Новини</a></li>
+          <li><a class="nav-link" href="contacts.html">Контакти</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="center gallery-main">
+      <h1>Цікаві супутники Місяця</h1>
+      <p>Натисніть на мітки на карті — нижче прокрутиться до короткого опису відповідної місії.</p>
+
+      <figure style="margin:0 0 12px 0">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/FullMoon2010.jpg"
+          alt="Місяць — клікабельна карта місій" usemap="#moonmap"
+          style="max-width:100%;height:auto;border-radius:12px;border:1px solid #e5e7eb" width="800" height="800">
+        <figcaption style="font-size:0.9rem;color:#4b5563;margin-top:6px">
+          Карта умовна: мітки позначають факти про відомі штучні супутники Місяця.
+        </figcaption>
+      </figure>
+
+      <map name="moonmap">
+        <area shape="circle" coords="400,260,55" href="#lro" alt="LRO (NASA)" title="LRO (NASA)">
+        <area shape="circle" coords="260,420,50" href="#luna10" alt="Луна-10" title="Луна-10 (1966)">
+        <area shape="rect" coords="520,420,640,500" href="#kaguya" alt="Kaguya/SELENE" title="Kaguya/SELENE (JAXA)">
+        <area shape="circle" coords="570,230,45" href="#queqiao" alt="Queqiao" title="Queqiao (ретранслятор L2)">
+        <area shape="circle" coords="360,560,45" href="#capstone" alt="CAPSTONE" title="CAPSTONE (NRHO)">
+        <area shape="rect" coords="150,250,230,320" href="#smart1" alt="SMART-1" title="SMART-1 (ESA)">
+      </map>
+
+      <section id="first-orbiters">
+        <h2 id="luna10">Луна-10 (1966, СРСР)</h2>
+        <p>Перший штучний супутник Місяця; провела гравіметричні вимірювання і дослідження плазми.</p>
+      </section>
+
+      <section id="modern">
+        <h2 id="lro">LRO (2009–, NASA)</h2>
+        <p>Створює детальні карти поверхні; допомогла локалізувати потенційні запаси криги в полярних тінях.</p>
+
+        <h2 id="kaguya" style="margin-top:1rem">Kaguya/SELENE (2007–2009, JAXA)</h2>
+        <p>Отримала 3D-топографію та дані про мінералогію — базис для вибору майбутніх місць посадки.</p>
+      </section>
+
+      <section id="far-side">
+        <h2 id="queqiao">Queqiao (2018–, CNSA)</h2>
+        <p>Ретранслятор біля точки Лагранжа L2, що забезпечив зв’язок для посадки Chang’e-4 на зворотному боці.</p>
+      </section>
+
+      <section id="nrho">
+        <h2 id="capstone">CAPSTONE (2022–, NASA/Advanced Space)</h2>
+        <p>Демонструє стійкість орбіти NRHO — траєкторії для майбутньої орбітальної станції Gateway.</p>
+
+        <h2 id="smart1" style="margin-top:1rem">SMART-1 (2003–2006, ESA)</h2>
+        <p>Тестував іонний двигун; вів спектральні спостереження для уточнення складу поверхні.</p>
+      </section>
+    </main>
+
+    <aside class="right">
+      <div>
+        <h3>Підказка</h3>
+        <p>Якщо мітки на карті не збігаються після заміни зображення — відредагуй атрибут <code>coords</code> у
+          &lt;area&gt; під свої розміри.</p>
+        <hr>
+        <h3>Словничок</h3>
+        <p><strong>Периселуній</strong> — найнижча точка орбіти навколо Місяця.<br>
+          <strong>Апоселуній</strong> — найвища точка орбіти.
+        </p>
+      </div>
+    </aside>
+
+    <section class="bar5">
+      <div>
+        <strong>Галерея:</strong> переглянь анімовані карти рельєфу та полярних кратерів у розділі «Галерея».
+      </div>
+    </section>
+
+    <footer class="bottom">
+            <p>Free S.. FIOT</p>
+            <span>© MoonFacts</span>
+        </footer>
+
+  </div>
+</body>
+
+</html>
